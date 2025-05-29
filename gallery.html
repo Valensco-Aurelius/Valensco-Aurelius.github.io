@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;        /* make sure body takes full height */
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #fff4f2;
+      padding-bottom: 60px;
+      
+      display: flex;            /* enable flexbox */
+      justify-content: center;  /* horizontal center */
+      align-items: center;      /* vertical center */
+      min-height: 100vh;        /* full viewport height */
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #fff4f2;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #de5499;
+    }
+
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* space between videos */
+      align-items: center;
+      padding: 40px 20px;
+      margin-top: 80px; /* To avoid overlap with fixed header */
+      max-width: 1000px;
+    }
+
+    .video-container video {
+      width: 300px;
+      height: 300px; 
+      object-fit: cover; /* crops video to fill square without distortion */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="video-container">
+  <video controls>
+    <source src="myvideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <video controls>
+    <source src="myvideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <video controls>
+    <source src="myvideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #fff4f2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top header navigation */
+    header {
+      background-color: #fff4f2;
+      color: black;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #de5499;
+    }
+
+    /* Main content: name + photo */
+    .home-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1; /* take remaining space */
+      gap: 40px;
+      padding: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .my-name {
+      font-size: 48px;
+      font-weight: bolder;
+      color: #333;
+    }
+
+    .my-photo {
+      max-width: 250px;
+      height: auto;
+      border-radius: 20px;
+    }
+    .social-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  gap: 8px;
+}
+
+.social-links a img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links a:hover {
+  color: #de5499;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="home-container">
+  <div>
+    <div class="my-name">NICOLE GLENDA SOEN</div>
+    <div class="social-links">
+      <a href="https://instagram.com/nicolesoen_" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+        Instagram
+      </a>
+      <a href="https://youtube.com/@yourchannel" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" />
+        YouTube
+      </a>
+    </div>
+  </div>
+  <img src="myphoto.jpg" alt="My Photo" class="my-photo" />
+</div>
+
+
+</body>
+</html>
